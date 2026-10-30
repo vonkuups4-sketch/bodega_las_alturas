@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto || Bodega Las Alturas</title>
+    <link rel="stylesheet" href="css/visita.css">
+</head>
+<body class="body-contacto">
+
+    <header class="header-contacto">
+        <div class="contenedor">
+            <a href="index.html" class="boton-volver">VOLVER AL INICIO</a>
+            <h1 class="titulo-contacto">Contacto</h1>
+            <p class="subtitulo-contacto">Si tenés una consulta sobre nuestros vinos o tu próxima visita, estamos para ayudarte.</p>
+        </div>
+    </header>
+
+    <main class="main-contacto">
+        <div class="contenedor contenedor-contacto">
+            
+            <!-- Columna Izquierda: Información -->
+            <section class="columna-info-contacto">
+                <h2>Hablemos</h2>
+                <p class="bajada-info">Comunicate con nuestro equipo por correo, por teléfono o a través del formulario.</p>
+
+                <div class="bloque-contacto">
+                    <span class="label-contacto">CORREO ELECTRÓNICO</span>
+                    <a href="mailto:visitas@lasalturas.com.ar" class="dato-destacado">visitas@lasalturas.com.ar</a>
+                </div>
+
+                <div class="bloque-contacto">
+                    <span class="label-contacto">TELÉFONO</span>
+                    <a href="tel:+542614958300" class="dato-destacado">+54 261 495-8300</a>
+                </div>
+
+                <hr class="linea-separadora">
+
+                <div class="bloque-contacto">
+                    <span class="label-contacto">HORARIOS DE ATENCIÓN</span>
+                    <div class="filas-horarios">
+                        <div class="fila-horario"><span>Lunes a viernes</span><span>9:00–18:00</span></div>
+                        <div class="fila-horario"><span>Sábados</span><span>9:00–16:00</span></div>
+                        <div class="fila-horario"><span>Domingos</span><span>Con reserva previa</span></div>
+                    </div>
+                </div>
+
+                <hr class="linea-separadora">
+
+                <div class="bloque-contacto">
+                    <span class="label-contacto">DÓNDE ESTAMOS</span>
+                    <p class="texto-direccion">Ruta Provincial 89, Km 12, Tunuyán, Valle de Uco, Mendoza, Argentina.</p>
+                </div>
+            </section>
+
+            <!-- Columna Derecha: Formulario -->
+            <section class="columna-form-contacto">
+                <h2>Envianos tu consulta</h2>
+                <p class="bajada-info">Completá los campos marcados con *. El teléfono es opcional.</p>
+
+                <form class="form-contacto">
+                    <div class="grid-inputs">
+                        <div class="form-grupo">
+                            <label>Nombre completo *</label>
+                            <input type="text" placeholder="Tu nombre y apellido" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label>Correo electrónico *</label>
+                            <input type="email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label>Teléfono (opcional)</label>
+                            <input type="text" placeholder="Código de área y número">
+                        </div>
+                        <div class="form-grupo">
+                            <label>Motivo de la consulta *</label>
+                            <select required>
+                                <option value="" disabled selected>Seleccioná un motivo</option>
+                                <option value="visita">Reserva / Visita</option>
+                                <option value="vinos">Consultas sobre Vinos</option>
+                                <option value="eventos">Eventos Privados</option>
+                                <option value="otro">Otro motivo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo full-width">
+                        <label>Mensaje *</label>
+                        <textarea rows="5" placeholder="Contanos en qué podemos ayudarte..." required></textarea>
+                    </div>
+
+                    <div class="footer-form-contacto">
+                        <div class="politicas">
+                            <span>Antes de enviar tu consulta, podés consultar nuestras políticas y condiciones.</span>
+                            <a href="politicas.html">Políticas y condiciones</a>
+                        </div>
+                        <button type="submit" class="btn-enviar-contacto">ENVIAR CONSULTA &rarr;</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>

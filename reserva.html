@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar mi visita || Bodega Las Alturas</title>
+    <link rel="stylesheet" href="css/visita.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Botón Volver -->
+        <header class="header-visitas">
+            <a href="visitas.html" class="boton-volver">VOLVER</a>
+        </header>
+
+        <section class="hero-visitas">
+            <div>
+                <h1>Reservar mi visita</h1>
+                <p class="subtitulo-seccion" style="margin-top: 8px;">Confirmamos disponibilidad en menos de 24 horas.</p>
+            </div>
+        </section>
+
+        <form class="form-reserva">
+            <div class="form-grupo">
+                <label>NOMBRE COMPLETO</label>
+                <input type="text" placeholder="Enzo Vonkunosky" required>
+            </div>
+
+            <div class="form-grupo">
+                <label>CORREO ELECTRONICO</label>
+                <input type="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+
+            <div class="form-grupo">
+                <label>FECHA PREFERIDA</label>
+                <input type="text" placeholder="dd/mm/aaaa" required>
+            </div>
+
+            <div class="form-grupo">
+                <label>CANTIDAD DE PERSONAS</label>
+                <input type="number" placeholder="2" min="1" required>
+            </div>
+
+            <div class="form-grupo">
+                <label>EXPERIENCIA DE INTERES</label>
+                <select required>
+                    <option value="" disabled selected>Seleccionar Experiencia...</option>
+                    <option value="paseo">Paseo al viñedo</option>
+                    <option value="cava">Experiencia cava</option>
+                    <option value="almuerzo">Almuerzo Bodega</option>
+                </select>
+            </div>
+
+            <div class="form-grupo btn-enviar-container">
+                <button type="submit" class="btn-enviar">ENVIAR SOLICITUD</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
