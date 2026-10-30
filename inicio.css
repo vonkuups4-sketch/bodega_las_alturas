@@ -1,0 +1,113 @@
+
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.boton-volver {
+    margin: 10px;
+    align-self: flex-start;
+    background-color: #a17817;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight:bold;
+}
+.split-container {
+    display: flex;
+    height: 100vw;
+    height: 100vh;
+}
+.left-side {
+    flex: 1; 
+    height: 100%;
+    background-image: url(../img/inicio.webp);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+/*ocupa la parte izquierda de la pantalla*/
+.left-side h1 {
+    color: white;
+    font-size: 2.8rem;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+/*ocupa la parte derecha de la pantalla*/
+.right-side {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px;
+}
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.login-box h2,
+.login-box h3 {
+    text-align: center;
+    width: 100%; /* Obliga a que el texto ocupe todo el ancho y se centre*/
+}
+.login-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    margin: 8px 0 20px 0;
+    background-color: #ffffff;
+    color: #000;
+}
+.footer-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.footer-login a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: #a17817;
+    line-height: 1.2;
+}
+.login-box h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #a17817;
+    letter-spacing: 2px;
+}
+
+.login-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.login-box span h2 {
+    font-size: 1.6rem;
+    font-family: serif;
+    text-transform: none;
+    color: #ffffff;
+}
+.login-box .btn-login {
+    background-color: #d4af37; /* Dorado */
+    color: #000000; /* Texto oscuro */
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}

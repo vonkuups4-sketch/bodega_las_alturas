@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.index {
+    width: 100%;
+    overflow-x: hidden;
+}
+.portada {
+    background-image: url(../img/inicio1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+/*Posición elementos internos*/
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 60px;
+
+    position: relative;
+}
+/* Capa de oscurecimiento (filtro oscuro sobre la foto) */
+.portada::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+/* Aseguramos que el contenido esté por encima de la capa oscura */
+.portada > * {
+    position: relative;
+    z-index: 2;
+}
+/*Menu de navegación superior*/
+.nav-bar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    
+    color: #a17817;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;   
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    margin-left: 25px;
+}
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.titulo {
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+.titulo h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.titulo h1 span {
+    display: block;
+    color: #a17817;
+}
+.titulo p {
+    color: #a17817;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
